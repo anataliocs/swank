@@ -145,3 +145,12 @@ ul#strengthBar {
     width:20px;
 }
 /* end Password strength bar style */
+
+
+div.hero-home {
+    background-image: url('');
+    background-color: transparent;
+    background-size: cover;
+    width: 100%;
+    opacity: 0.95;
+}
