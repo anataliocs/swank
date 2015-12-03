@@ -16,8 +16,6 @@ angular.module('swankApp')
                         controller: 'ProfileController'
                     }
                 },
-                resolve: {
-
-                }
+                resolve: {}
             });
     });
