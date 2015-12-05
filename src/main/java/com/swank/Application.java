@@ -19,6 +19,8 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Set;
+import java.util.TreeSet;
 
 @ComponentScan
 @EnableAutoConfiguration(exclude = {MetricFilterAutoConfiguration.class, MetricRepositoryAutoConfiguration.class})
@@ -40,6 +42,16 @@ public class Application {
      */
     @PostConstruct
     public void initApplication() throws IOException {
+
+/*        System.out.printf("This is the classpath: %s %n",
+            System.getProperty("java.class.path"));
+        Set<String> propNames = new TreeSet<String>(System.getProperties().stringPropertyNames());
+        for (String propertyName : propNames) {
+            System.out.printf("%s is %s %n",
+                propertyName,
+                System.getProperty(propertyName));
+        }*/
+
         if (env.getActiveProfiles().length == 0) {
             log.warn("No Spring profile configured, running with default configuration");
         } else {
