@@ -1,12 +1,51 @@
+<script type="application/javascript">
+    $(document).ready(function () {
+        $('.material-button-toggle').click(function () {
+            $(this).toggleClass('open');
+            $('.option').toggleClass('scale-on');
+        });
+    });
+</script>
+
+
 <div class="row">
     <div class="col-md-12">
         <div class="fb-profile">
             <img align="left" class="fb-image-lg" src="http://lorempixel.com/850/280/nightlife/5/"
                  alt="Profile image example"/>
+
+
             <img align="left" class="fb-image-profile thumbnail" src="http://lorempixel.com/180/180/people/9/"
                  alt="Profile image example"/>
 
+
             <div class="fb-profile-text">
+
+                <div class="pull-right">
+                    <div class="material-button-anim">
+                        <ul class="list-inline" id="options">
+                            <li class="option">
+                                <button class="material-button option1" type="button">
+                                    <span class="fa fa-phone" aria-hidden="true"></span>
+                                </button>
+                            </li>
+                            <li class="option">
+                                <button class="material-button option2" type="button">
+                                    <span class="fa fa-envelope-o" aria-hidden="true"></span>
+                                </button>
+                            </li>
+                            <li class="option">
+                                <button class="material-button option3" type="button">
+                                    <span class="fa fa-pencil" aria-hidden="true"></span>
+                                </button>
+                            </li>
+                        </ul>
+                        <button class="material-button material-button-toggle" type="button">
+                            <span class="fa fa-plus" aria-hidden="true"></span><br/>Contact
+                        </button>
+                    </div>
+                </div>
+
                 <h1>FirstName LastName</h1>
 
                 <p>Girls just wanna go fun.</p>
@@ -20,11 +59,11 @@
 <h2>Portfolio</h2>
 <br/>
 <div class="row profileGallery">
-    <div class="col-md-6 col-sm-12 col-xs-12"><img class="img-responsive"
-                                                   src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg"/>
+    <div class="col-md-12 col-sm-12 col-xs-12"><img class="img-responsive"
+                                                    src="http://placehold.it/1500x1500"/>
     </div>
-    <div class="col-md-6 col-sm-12 col-xs-12"><img class="img-responsive"
-                                                   src="http://www.virginia.org/uploadedImages/virginiaorg/Images/OrgImages/H/HamptonConventionVisitorBureau/Grandview_Nature_Preserve.jpg?width=300&height=200&scale=upscalecanvas"/>
+    <div class="col-md-12 col-sm-12 col-xs-12"><img class="img-responsive"
+                                                    src="http://placehold.it/1500x1500"/>
     </div>
 
 </div>
